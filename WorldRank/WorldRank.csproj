@@ -7,4 +7,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="6.1.4" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="6.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WorldRank.Application\WorldRank.Application.csproj" />
+    <ProjectReference Include="..\WorldRank.Domain\WorldRank.Domain.csproj" />
+    <ProjectReference Include="..\WorldRank.Infrastructure\WorldRank.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
