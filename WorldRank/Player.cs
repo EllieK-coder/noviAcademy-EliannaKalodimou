@@ -5,7 +5,8 @@ public class Player : IPlayer
 {
     private Dictionary<Currency, Wallet> wallets = [];
 
-    public enum Currency{
+    public enum Currency
+    {
         EUR,
         USD,
         GBP
