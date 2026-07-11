@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "3ikNeLZlnXg=",
+  "dgSpecHash": "A+92VDXjMp4=",
   "success": true,
-  "projectFilePath": "E:\\Users\\Elianna\\Documents\\AppData\\Downloads\\noviAcademy-EliannaKalodimou-master\\noviAcademy-EliannaKalodimou-master\\WorldRank.Infrastructure\\WorldRank.Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\iskoutari\\source\\repos\\NoviAcademy2026\\EliannaKalodimou\\WorldRank.Infrastructure\\WorldRank.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\iskoutari\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\iskoutari\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

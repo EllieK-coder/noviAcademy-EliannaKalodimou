@@ -1,13 +1,12 @@
-namespace WorldRank.Console.Exceptions
-{
-	public class PlayerNotFoundException : Exception
-	{
-		public int PlayerId { get; }
+namespace WorldRank.Domain.Exceptions;
 
-		public PlayerNotFoundException(int playerId)
+public class PlayerNotFoundException : WorldRankException
+{
+	public int PlayerId { get; }
+
+	public PlayerNotFoundException(int playerId)
 			: base($"Player {playerId} was not found.")
-		{
-			PlayerId = playerId;
-		}
+	{
+		PlayerId = playerId;
 	}
 }
