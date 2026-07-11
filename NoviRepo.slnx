@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Domain/WorldRank.Domain.csproj" />
+  <Project Path="NoviRepo/WorldRank.csproj" />
+  <Project Path="WorldRank.Applications/WorldRank.Applications.csproj" />
+  <Project Path="WorldRank.Infrastructures/WorldRank.Infrastructures.csproj" />
+</Solution>
