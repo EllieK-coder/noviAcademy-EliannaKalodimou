@@ -74,3 +74,6 @@ coverage*/
 *.coverage
 *.coveragexml
 lcov.info
+
+[Oo]bj/
+[Bb]in/
