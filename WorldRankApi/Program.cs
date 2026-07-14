@@ -1,10 +1,10 @@
 using System.Text.Json.Serialization;
-using System.Data.Common;
 using Microsoft.EntityFrameworkCore;
 using NLog.Extensions.Logging;
+using NoviCode;
 using WorldRank.Application.Interfaces;
 using WorldRank.Application.Strategies;
-using WorldRank.Infrastructures.Data;
+using WorldRank.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,16 +20,10 @@ builder.Services.AddDbContext<WorldRankDbContext>(options => {
 builder.Services.AddScoped<IPlayerRepository, DBPlayerRepository>();
 builder.Services.AddScoped<IWalletRepository, DBWalletRepository>();
 
-// Services not exposed via interfaces in this solution; controllers use repositories directly.
-// If you add IPlayerService/IWalletService interfaces, register them here.
-
 //strategy
 builder.Services.AddSingleton<IFundsStrategy, AddFundsStrategy>();
 builder.Services.AddSingleton<IFundsStrategy, SubtractFundsStrategy>();
 builder.Services.AddSingleton<IFundsStrategy, ForceSubtractFundsStrategy>();
-
-// Single-instance in-memory cache (Day 6). Redis would replace this behind a load balancer.
-//builder.Services.AddMemoryCache();
 
 // Accept/emit enums (e.g. Currency) as their string names, not numbers.
 builder.Services.AddControllers()
