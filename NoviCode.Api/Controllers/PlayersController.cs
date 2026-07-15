@@ -9,6 +9,7 @@ public class PlayersController : ControllerBase
 {
     private readonly IDispatcher _dispatcher;
 
+
     public PlayersController(IDispatcher dispatcher) => _dispatcher = dispatcher;
 
     // POST /players — create a player (PlayerCacheWriteThroughDecorator refreshes the cache).
@@ -45,6 +46,7 @@ public class PlayersController : ControllerBase
         var players = await _dispatcher.Ask(new GetAllPlayersQuery(), cancellationToken);
         return Ok(players.Select(PlayerResponse.From));
     }
+
 }
 	private readonly IPlayerService _players;
 
@@ -84,3 +86,4 @@ public class PlayersController : ControllerBase
 		return Ok(players.Select(PlayerResponse.From));
 	}
 }
+

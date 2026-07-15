@@ -1,3 +1,4 @@
+
 using Microsoft.AspNetCore.Components;
 
 using Microsoft.AspNetCore.Mvc;
@@ -5,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace NoviCode.Api;
 
 [ApiController]
+[Route("wallets")]
+
 [Microsoft.AspNetCore.Components.Route("wallets")]
 public class WalletsController : ControllerBase
 {
@@ -47,6 +50,7 @@ public class WalletsController : ControllerBase
         }
     }
 }
+
 	
 
 
